@@ -1,7 +1,8 @@
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-	function compute(){
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	function compute()
+	{
 		$code = $_POST["code"];
 		$code_file = fopen("main.py", "w");
 		fwrite($code_file, $code);
@@ -16,15 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	compute();
 	$result_file = fopen("result.txt", "r");
 	$results = "";
-	if (filesize("result.txt") == 0){
+	if (filesize("result.txt") == 0) {
 		$results = "";
-	}
-	else {
+	} else {
 		$results = fread($result_file, filesize("result.txt"));
 	}
 	fclose($result_file);
-}
-else {
+} else {
 	$results = "";
 }
 print <<<EOF
@@ -35,9 +34,9 @@ print <<<EOF
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<button class="change_theme">
-			<div class="change"/>
-		</button>
+		<div class="change_theme">
+			<div class="change"></div>
+		</div>
 		<form action="index.php" method="post" class="form">
 			<label for="code">Code:</label>
 			<textarea type="text" name="code" placeholder="write your python code in here" id="code"></textarea>

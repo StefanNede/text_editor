@@ -25,19 +25,18 @@ textarea {
   margin-bottom: 2vh;
 }
 
-.change_theme {
+/* .change_theme {
   position: absolute;
-  width: 5vw;
-  height: 2vh;
+  width: 100px;
+  height: 100px;
   border-radius: 20px;
   border: 1px solid gray;
   background-color: lightgray;
-}
+  left: 0;
+} */
 
 .change {
-  position: relative;
-  border: 1px solid black;
-  left: 0;
+  height: 10px;
 }
 
 .to_dark {
