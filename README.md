@@ -1,5 +1,6 @@
 # text_editor
-A text editor for python code that outputs the result in the window
+A text editor for python code that outputs the result in the window, which has a dark and light mode.
+Made in php and jquery
 
 Example:
 
