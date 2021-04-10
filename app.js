@@ -1,3 +1,6 @@
 $(document).ready(function(){
-	console.log("hello");
+	let color_theme = "light";
+	$(".change_theme").click(function(){
+		$(".change").toggleClass("to_dark");
+	})
 })

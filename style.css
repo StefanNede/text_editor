@@ -1,26 +1,45 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 label {
-	margin-top: 5vh;
-	margin-bottom: 2vh;
-	font-size: 2rem;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  font-size: 2rem;
 }
-textarea {	
-	width: 50vw;
-	height: 50vh;
-	margin-bottom: 2vh;
+textarea {
+  width: 50vw;
+  height: 50vh;
+  margin-bottom: 2vh;
+}
+
+.change_theme {
+  position: absolute;
+  width: 5vw;
+  height: 2vh;
+  border-radius: 20px;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+
+.change {
+  position: relative;
+  border: 1px solid black;
+  left: 0;
+}
+
+.to_dark {
+  right: 0;
 }
