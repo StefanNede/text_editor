@@ -30,13 +30,10 @@ print <<<EOF
 	<!DOCTYPE html>
 	<html>
 	<head>
-		<link href="style.css" rel="stylesheet"></link>
+		<link rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="change_theme">
-			<div class="change"></div>
-		</div>
 		<form action="index.php" method="post" class="form">
 			<label for="code">Code:</label>
 			<textarea type="text" name="code" placeholder="write your python code in here" id="code"></textarea>
@@ -45,6 +42,9 @@ print <<<EOF
 		<div class="results">
 			$results 
 		</div>
+		<button class="change_theme">
+			<div class="change"></div>
+		</button>
 	<script src="app.js">
 	</script>
 	</body>

@@ -18,27 +18,41 @@ label {
   margin-top: 5vh;
   margin-bottom: 2vh;
   font-size: 2rem;
+  outline: none;
 }
 textarea {
   width: 50vw;
   height: 50vh;
   margin-bottom: 2vh;
+  outline: none;
 }
 
-/* .change_theme {
+.change_theme {
+  margin-left: 20px;
+  margin-top: 20px;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 30px;
   border-radius: 20px;
   border: 1px solid gray;
-  background-color: lightgray;
   left: 0;
-} */
-
-.change {
-  height: 10px;
+  outline: none;
 }
 
-.to_dark {
-  right: 0;
+.change {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  left: -7.5px;
+  top: -2.5px;
+  transition: all 0.25s ease;
+  background-color: rgb(174, 174, 174);
+}
+
+.toDark {
+  left: 22.5px;
+  background-color: rgb(41, 41, 41);
+  border: 1px solid lightgray;
 }
